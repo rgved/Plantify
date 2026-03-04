@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PLANTIFYMADFINAL" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#5A5A40</item>
+        <item name="colorSecondary">#8E9299</item>
+    </style>
+
+    <style name="Theme.PLANTIFYMADFINAL" parent="Base.Theme.PLANTIFYMADFINAL" />
+
+    <style name="Theme.PLANTIFYMADFINAL.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
