@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="20dp"
-    app:cardElevation="0dp"
-    app:strokeColor="#F0F0F0"
+    app:cardElevation="2dp"
+    app:strokeColor="#E9EDC9"
     app:strokeWidth="1dp">
 
     <RelativeLayout
@@ -16,25 +16,46 @@
         <ImageView
             android:id="@+id/iv_plant"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_leaf"
-            android:background="#F8F9FA" />
+            android:background="#F1F3E9" />
+
+        <!-- Category Tag -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardBackgroundColor="#CC386641"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:text="Indoor"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:id="@+id/btn_favorite"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="12dp"
             app:cardBackgroundColor="#CCFFFFFF"
-            app:cardCornerRadius="18dp"
-            app:cardElevation="0dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_favorite_border"
-                app:tint="#5A5A40" />
+                app:tint="#386641" />
         </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
@@ -49,11 +70,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="serif"
                 android:maxLines="1"
                 android:text="Snake Plant"
-                android:textColor="#1a1a1a"
-                android:textSize="15sp" />
+                android:textColor="#1B4332"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_scientific_name"
@@ -62,30 +84,11 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="Sansevieria trifasciata"
-                android:textColor="#8E9299"
-                android:textSize="11sp" />
+                android:textColor="#52796F"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:textStyle="italic" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
-
-                <TextView
-                    android:id="@+id/tv_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="$24.00"
-                    android:textColor="#5A5A40"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_add_circle"
-                    app:tint="#5A5A40" />
-            </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>

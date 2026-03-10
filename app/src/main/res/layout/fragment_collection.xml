@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f5f5f0">
+    android:background="#F8F9F3">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -28,8 +28,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="serif"
-                    android:text="Green Shop"
-                    android:textColor="#5A5A40"
+                    android:text="My Favorites"
+                    android:textColor="#386641"
                     android:textSize="32sp"
                     android:textStyle="bold|italic" />
 
@@ -37,8 +37,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Find your next leafy companion"
-                    android:textColor="#8E9299"
+                    android:text="Your personal plant collection"
+                    android:textColor="#52796F"
                     android:textSize="14sp" />
 
                 <com.google.android.material.chip.ChipGroup
@@ -53,26 +53,32 @@
                         android:layout_height="wrap_content"
                         android:text="All"
                         android:checked="true"
-                        app:chipBackgroundColor="#5A5A40"
+                        app:chipBackgroundColor="#386641"
                         android:textColor="@android:color/white" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Indoor" />
+                        android:text="Indoor"
+                        app:chipIcon="@drawable/ic_home"
+                        app:chipIconTint="#386641" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Outdoor" />
+                        android:text="Outdoor"
+                        app:chipIcon="@drawable/ic_leaf"
+                        app:chipIconTint="#386641" />
 
                     <com.google.android.material.chip.Chip
                         style="@style/Widget.MaterialComponents.Chip.Choice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Succulents" />
+                        android:text="Succulents"
+                        app:chipIcon="@drawable/ic_leaf"
+                        app:chipIconTint="#386641" />
                 </com.google.android.material.chip.ChipGroup>
             </LinearLayout>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
